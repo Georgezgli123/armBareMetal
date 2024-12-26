@@ -19,6 +19,7 @@ void kernel_main() {
     printf("\tBoard: RPI 4");
 #endif
     printf("\n\nDone, ported printf is using!\n");
+    printf("\nException Level: %d\n", get_el());
     while(1) {
         uart_send(uart_recv());
     }
