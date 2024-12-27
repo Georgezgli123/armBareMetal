@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "irq.h": "c",
+        "printf.h": "c",
+        "mini_uart.h": "c"
+    }
+}
