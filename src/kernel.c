@@ -3,7 +3,7 @@
 #include "printf.h"
 #include "irq.h"
 #include "utils.h"
-#include "time.h"
+#include "timer.h"
 
 void putc(void *p, char c) {
     if(c == '\n') {
@@ -28,6 +28,27 @@ void kernel_main() {
 #endif
     printf("\n\nDone, ported printf is using!\n");
     printf("\nException Level: %d\n", get_el());
+
+    printf("Sleep 200ms ...\n");
+    timer_sleep(200);
+
+    printf("Sleep 200ms ...\n");
+    timer_sleep(200);
+    printf("Sleep 200ms ...\n");
+    timer_sleep(200);
+    printf("Sleep 200ms ...\n");
+    timer_sleep(200);
+
+    printf("Sleep 2s ...\n");
+    timer_sleep(2000);
+    printf("Sleep 2s ...\n");
+    timer_sleep(2000);
+    printf("Sleep 2s ...\n");
+    timer_sleep(2000);
+    printf("Sleep 5s ...\n");
+    timer_sleep(5000);
+    printf("Sleep 5s ...\n");
+    timer_sleep(5000);
     while(1) {
         //uart_send(uart_recv());
     }

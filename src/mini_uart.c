@@ -15,7 +15,7 @@ void uart_init() {
 
     REG_AUX->enables = 1;
     REG_AUX->mu_control = 0;
-    REG_AUX->mu_ier = 2;
+    REG_AUX->mu_ier = 0xD;
     REG_AUX->mu_lcr = 3;
     REG_AUX->mu_mcr = 0;
 
