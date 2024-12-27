@@ -4,6 +4,10 @@
 #include "common.h"
 
 enum vc_irqs {
+    SYSTEM_TIMER_IRQ_0 = 1,
+    SYSTEM_TIMER_IRQ_1 = 2,
+    SYSTEM_TIMER_IRQ_2 = 4,
+    SYSTEM_TIMER_IRQ_3 = 8,
     AUX_IRQ = (1 << 29)
 };
 
