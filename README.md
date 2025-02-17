@@ -1,5 +1,5 @@
 # armBareMetal
-This is a project for bare metal to communicate with CPU/peripherals.
+This is a project for bare metal to communicate with CPU/peripherals based on Raspberry PI 4 (BCM2711 64-bit quad-core ARM Cortex-A72 processor).
 
 ## What it has done
 
